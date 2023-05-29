@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <div class="mainContainerHome">
+    <div class="navBarContainer">
+      <div class="iconNav">
+        <img src="img/Mask group (3).png">
+      </div>
+      <div class="navOptions">
+        <img onclick="home()" src="img/HOME.png" class="footerOptionsIcon">
+        <img onclick="archive()" src="img/ARCHIVE.png" class="footerOptionsIcon">
+        <img onclick="about()" src="img/ABOUT (1).png " class="footerOptionsIcon">
+        <img onclick="events()" src="img/EVENTS (1).png" class="footerOptionsIcon">
+        <img src="img/MERCH (2).png" class="footerOptionsIcon">
+      </div>
+      <div class="buyButton">
+        <img src="img/Group 10 (1).png" onclick="buyTickets()">
+      </div>
+      <img src="img/Rectangle 15 (1).png">
+    </div>
+    <div class="buyTickets" id="buyTickets">
+      <h1>BUY TICKETS</h1>
+    </div>
+    <div class="eventSolus" id="events">
+      <div class="eventGrid">
+        <img class="card" src="img/image 39.png">
+        <img class="card" src="img/image 40.png">
+        <img class="card" src="img/image 41.png">
+      </div>
+      <img src="img/image00007 1.png">
+      <div class="UpcomingText">
+        <img src="img/Group 21 (1).png" alt="">
+        <img src="img/Component 3.png" onclick="buyTickets()">
+        <img src="img/Group 82.png" onclick="buyTickets()">
+      </div>
+    </div>
+   
+    <div class="archiveSolus" id="archive">
+      <div>
+        <img src="img/Group 81.png">
+      </div>
+      <div class="centerArchive" id="archive">
+        <img src="img/BLR (2).png">
+      </div>
+      <div class="center" id="archive">
+        <img src="img/Group 76.png">
+      </div>
+      <div class="centerArchive" id="archive">
+        <img src="img/BOM (1).png">
+      </div>
+      <div class="center" id="archive">
+        <img src="img/Group 77.png">
+      </div>
+    </div>
+    <div class="aboutSolus" id="about">
+      <img src="img/Group 73.png">
+    </div>
+    <div class="communityMain" id="about">
+      <div class="text">
+        <img src="img/text.png">
+      </div>
+      <div class="grid">
+        <div class="textMosaic">
+          <img src="img/Group 75.png">
+        </div>
+        <div class="mosaic">
+          <img src="img/Group 74.png">
+        </div>
+      </div>
+    </div>
+    <div class="whoAreWeContiner" id="about">
+      <div class="iconWhoAreWe">
+        <img src="img/Asset 35@3x 3.png">
+      </div>
+      <div class="textWhoAreWe">
+        <img src="img/WHO ARE WE _.png">
+        <img src="img/competetor.png">
+      </div>
+      <img src="img/STY03803 1.png">
+    </div>
+    <div class="hero" id="home">
+      <div class="centerText">
+        <img src="img/DLP 8.png" class="textHero">
+        <img src="img/BOMBAY.png" class="place">
+        <img src="img/5.06.2023 (1).png" class="textHero">
+        <img src="img/Group 5.png" class="textHero" onclick="buyTickets()">
+      </div>
+      <img src="img/hero1.png">
+    </div>
+    <div class="archive" id="home">
+      <div class="text">
+        <img src="img/text.png">
+      </div>
+      <div class="cardGrid">
+        <img class="card" src="img/BLR.png">
+        <img class="card" src="img/BOM.png">
+        <img class="card" src="img/DEL.png">
+      </div>
+    </div>
+    <div class="upcomingEvent" id="home">
+      <img src="img/Upcoming Event.png" onclick="buyTickets()">
+    </div>
+    <div class="merch" id="home">
+      <div class="leftText">
+        <img src="img/MERCH.png" class="textMerch">
+        <img src="img/DLP 8 EDITION.png" class="textMerch">
+        <img src="img/Allows special access to all Solus Sovereign events for 2023.png" class="textMerch">
+        <img src="img/Group 44.png" class="textMerch">
+      </div>
+      <img src="img/STYLE.png">
+    </div>
+    <div class="joinTheFam">
+      <div class="leftText">
+        <img src="img/GOT YOU EXCITED_ (1).png" class="textMerch">
+        <img src="img/JOIN THE FAMILY (1).png" class="textMerch">
+        <img src="img/Rectangle 20 (1).png" class="textMerch">
+        <img src="img/Group 42.png" class="textMerch">
+      </div>
+      <img src="img/IMG_3537 (2) 1.png">
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="icon">
+    <img src="img/Asset 17@3x.png">
+  </div>
+  <div class="footerOptions">
+    <img src="img/ABOUT.png" class="footerOptionsIcon">
+    <img src="img/ARCHIVES.png" class="footerOptionsIcon">
+    <img src="img/EVENTS.png" class="footerOptionsIcon">
+    <img src="img/MERCH (1).png" class="footerOptionsIcon">
+    <img src="img/NEWS.png" class="footerOptionsIcon">
+    <img src="img/Line 2.png" class="footerOptionsIcon">
+  </div>
+  <div class="socialMedia">
+    <img src="img/FOLLOW US.png" class="footerOptionsIcon">
+    <img src="img/Vector.png" class="footerOptionsIcon">
+    <img src="img/Group.png" class="footerOptionsIcon">
+    <img src="img/Vector (1).png" class="footerOptionsIcon">
+    <img src="img/Vector (2).png" class="footerOptionsIcon">
+  </div>
+  <img src="img/Rectangle 146.png" alt="">
+</footer>
+
+</html>
