@@ -112,6 +112,14 @@ body {
   html {
     zoom: .2;
   }
+  .navBarContainer {
+    zoom: 2;
+    max-width: 100%;
+
+  }
+  .navOptions {
+    margin-left: 20% !important;
+  }
 }
 
 @media only screen and (min-width: 800px) {
