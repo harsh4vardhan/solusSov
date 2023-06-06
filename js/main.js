@@ -257,6 +257,10 @@ $(window).bind('mousewheel', function (e) {
     document.getElementById('navbar').style.display = 'block';
 });
 
+$(window).bind('touchmove', function (e) {
+    document.getElementById('navbar').style.display = 'block';
+});
+
 
 $(document).ready(function () {
     var NavTop = $('.navBarContainer').offset().top;
