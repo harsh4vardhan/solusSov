@@ -6,6 +6,7 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -15,6 +16,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <script src="js/main.js"></script>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -27,9 +29,6 @@
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
@@ -37,7 +36,7 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <div class="mainContainerHome">
-    <div class="navBarContainer">
+    <div class="navBarContainer" id="navbar">
       <div class="iconNav">
         <img src="img/Mask group (3).png">
       </div>
@@ -46,53 +45,134 @@
         <img onclick="archive()" src="img/ARCHIVE.png" class="footerOptionsIcon">
         <img onclick="about()" src="img/ABOUT (1).png " class="footerOptionsIcon">
         <img onclick="events()" src="img/EVENTS (1).png" class="footerOptionsIcon">
-        <img src="img/MERCH (2).png" class="footerOptionsIcon">
+        <img onclick="merch()" src="img/MERCH (2).png" class="footerOptionsIcon">
       </div>
       <div class="buyButton">
         <img src="img/Group 10 (1).png" onclick="buyTickets()">
       </div>
-      <img src="img/Rectangle 15 (1).png">
+      <img src="img/Rectangle 15 (1).png" id="whiteBoundry">
     </div>
     <div class="buyTickets" id="buyTickets">
       <h1>BUY TICKETS</h1>
     </div>
-    <div class="eventSolus" id="events">
-      <div class="eventGrid">
-        <img class="card" src="img/image 39.png">
-        <img class="card" src="img/image 40.png">
-        <img class="card" src="img/image 41.png">
+    <div class="merch" id="merchPage">
+      <div class="merchContainer">
+        <div>
+          <img src="img/Rectangle 196.png">
+        </div>
+        <div class="merchText">
+          <img src="img/V2 MERCH.png"><br><br><br>
+          <img src="img/Official merchandise for DLP 8.png"><br><br><br>
+          <img src="img/- MRP.png"><br><br><br><br>
+          <img src="img/S M L XL XXL.png"><br><br><br><br>
+          <img src="img/Rectangle 206.png"><br><br><br><br>
+          <img src="img/Group 10 (2).png" onclick="showWaitList()"><br><br><br><br>
+        </div>
       </div>
-      <img src="img/image00007 1.png">
-      <div class="UpcomingText">
-        <img src="img/Group 21 (1).png" alt="">
-        <img src="img/Component 3.png" onclick="buyTickets()">
-        <img src="img/Group 82.png" onclick="buyTickets()">
+      <div class="waitList" id="waitList">
+        <div class="waitListContainer">
+          <img src="img/WAITLIST (1).png" class="waitListText">
+          <img src="img/BOM (2).png" class="red">
+        </div>
+        <form class="waitListForm">
+          <img for="fname" src="img/Input Text Label.png"><br>
+          <input type="text" id="fname" name="fname" value="first and second name" class="textInput"><br><br>
+          <img for="fname" src="img/Input Text Label (1).png"><br>
+          <input type="text" id="fname" name="fname" value="email address" class="textInput"><br><br>
+          <img for="fname" src="img/Input Text Label (2).png"><br>
+          <input type="text" id="fname" name="fname" value="social media handle" class="textInput"><br><br>
+          <img for="fname" src="img/Input Text Label (3).png"><br>
+          <input type="text" id="fname" name="fname" value="phone number" class="textInput"><br><br>
+          <img for="fname" src="img/Input Text Label (4).png"><br>
+          <input type="text" id="fname" name="fname" value="age" class="textInput"><br><br>
+          <img for="fname" src="img/Input Text Label (5).png"><br>
+          <input type="text" id="fname" name="fname" value="home address" class="textInput"><br><br>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html" class="white">SMALL</label><br><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css" class="white">MEDIUM</label><br><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript" class="white">LARGE</label><br><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript" class="white">EXTRA LARGE</label><br><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript" class="white">2 EXTRA LARGE</label><br><br>
+          <div class="options_button">
+            <img src="img/Buttons (1).png" onclick="showWaitList()">
+            <img src="img/Buttons.png" class="completeButton">
+          </div>
+        </form>
       </div>
     </div>
-   
+    <div class="eventSolus" id="events">
+      <div class="eventGrid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/image 39.png" onclick="" alt="avatar">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/Group 122.png" onclick="" alt="avatar">
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/image 40.png" onclick="">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/Group 125.png" onclick="">
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/image 41.png" onclick="">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/Group 125.png" onclick="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/image00007 1.png" id="eventGrid" class="widthHundred">
+      <div class="UpcomingText">
+
+        <img src="img/Group 21 (1).png" alt="">
+        <div class="eventBar" id="eventBar1" role="button">
+          <img src="img/Component 3.png" onclick="showRegister('eventOne')" id="eventOne" class="widthHundred">
+        </div>
+        <div class="eventBar" id="eventBar2">
+          <img src="img/Group 82.png" onclick="showRegister('eventTwo')" id="eventTwo" class="widthHundred">
+        </div>
+      </div>
+    </div>
+
     <div class="archiveSolus" id="archive">
-      <div>
-        <img src="img/Group 81.png">
+      <div id="widthHundred">
+        <img src="img/Group 81.png" id="startFrom" class="widthHundred">
       </div>
-      <div class="centerArchive" id="archive">
-        <img src="img/BLR (2).png">
+      <div class="centerArchive" id="archive" class="widthHundred">
+        <img src="img/BLR (2).png" id="scrollBlr">
       </div>
-      <div class="center" id="archive">
-        <img src="img/Group 76.png">
+      <div class="center" id="archive" class="widthHundred">
+        <img src="img/Group 76.png" class="widthHundred">
       </div>
-      <div class="centerArchive" id="archive">
-        <img src="img/BOM (1).png">
+      <div class="centerArchive" id="archive" class="widthHundred">
+        <img src="img/BOM (1).png" id="scrollBom">
       </div>
-      <div class="center" id="archive">
-        <img src="img/Group 77.png">
+      <div class="center" id="archive" class="widthHundred">
+        <img src="img/Group 77.png" class="widthHundred">
       </div>
     </div>
     <div class="aboutSolus" id="about">
-      <img src="img/Group 73.png">
+      <img src="img/Group 73.png" id="widthHundred">
     </div>
     <div class="communityMain" id="about">
       <div class="text">
-        <img src="img/text.png">
+        <img src="img/text.png" id="widthHundred">
       </div>
       <div class="grid">
         <div class="textMosaic">
@@ -111,47 +191,48 @@
         <img src="img/WHO ARE WE _.png">
         <img src="img/competetor.png">
       </div>
-      <img src="img/STY03803 1.png">
+      <img src="img/STY03803 1.png" id="widthHundred">
     </div>
     <div class="hero" id="home">
       <div class="centerText">
         <img src="img/DLP 8.png" class="textHero">
         <img src="img/BOMBAY.png" class="place">
         <img src="img/5.06.2023 (1).png" class="textHero">
-        <img src="img/Group 5.png" class="textHero" onclick="buyTickets()">
+        <!-- <img src="img/Group 5.png" class="textHero" onclick="buyTickets()"> -->
       </div>
-      <img src="img/hero1.png">
+      <img src="img/hero1.png" id="heroImage" class="blur">
     </div>
     <div class="archive" id="home">
       <div class="text">
-        <img src="img/text.png">
+        <img src="img/text.png" id="widthHundred">
       </div>
       <div class="cardGrid">
-        <img class="card" src="img/BLR.png">
-        <img class="card" src="img/BOM.png">
+
+        <img class="card" src="img/BLR.png" onclick="moveToDiv('scrollBlr')">
+        <img class="card" src="img/BOM.png" onclick="moveToDiv('scrollBom')">
         <img class="card" src="img/DEL.png">
       </div>
     </div>
     <div class="upcomingEvent" id="home">
-      <img src="img/Upcoming Event.png" onclick="buyTickets()">
+      <img src="img/Upcoming Event.png" onclick="buyTickets()" id="widthHundred">
     </div>
-    <div class="merch" id="home">
+    <div class="merch" id="home" id="widthHundred">
       <div class="leftText">
         <img src="img/MERCH.png" class="textMerch">
         <img src="img/DLP 8 EDITION.png" class="textMerch">
         <img src="img/Allows special access to all Solus Sovereign events for 2023.png" class="textMerch">
         <img src="img/Group 44.png" class="textMerch">
       </div>
-      <img src="img/STYLE.png">
+      <img src="img/STYLE.png" id="widthHundred">
     </div>
-    <div class="joinTheFam">
+    <div class="joinTheFam" id="widthHundred">
       <div class="leftText">
         <img src="img/GOT YOU EXCITED_ (1).png" class="textMerch">
         <img src="img/JOIN THE FAMILY (1).png" class="textMerch">
         <img src="img/Rectangle 20 (1).png" class="textMerch">
         <img src="img/Group 42.png" class="textMerch">
       </div>
-      <img src="img/IMG_3537 (2) 1.png">
+      <img src="img/IMG_3537 (2) 1.png" id="widthHundred">
     </div>
   </div>
 </body>
@@ -174,7 +255,7 @@
     <img src="img/Vector (1).png" class="footerOptionsIcon">
     <img src="img/Vector (2).png" class="footerOptionsIcon">
   </div>
-  <img src="img/Rectangle 146.png" alt="">
+  <img src="img/Rectangle 146.png" alt="" id="widthHundred">
 </footer>
 
 </html>

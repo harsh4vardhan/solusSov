@@ -18,13 +18,13 @@ html {
 }
 
 html {
-width: 100%;
+  width: 100%;
 }
 
 
 body {
   background-color: #1E1E1E;
-  width: 100%;
+  max-width: 100%;
   overflow-x: clip;
 }
 
@@ -85,7 +85,7 @@ body {
 
 
 .card {
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 .upcomingEvent {
@@ -100,23 +100,26 @@ body {
   position: absolute;
   display: inline-grid;
   margin-left: 35%;
-  margin-top: 5%;
+  margin-top: 20%;
   justify-items: center;
+  z-index: 1;
 }
 
 .buyTickets {
   position: relative;
   display: none;
 }
+
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   html {
     zoom: .2;
   }
-  .navBarContainer {
-    zoom: 2;
-    max-width: 100%;
 
+  .navBarContainer {
+    zoom: 1.8;
+    width: 100%;
   }
+
   .navOptions {
     margin-left: 20% !important;
   }
@@ -124,7 +127,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   html {
-    zoom: .9;        
+    zoom: .9;
   }
 }
 
@@ -137,12 +140,17 @@ body {
 
 .eventGrid {
   position: absolute;
-  margin-left: 15%;
   margin-top: 10%;
+  margin-left: 5%;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  z-index: 0;
 }
 
 .UpcomingText {
   margin-bottom: 20%;
+  z-index: 1;
 }
 
 .centerArchive {
@@ -154,13 +162,23 @@ body {
   padding-bottom: 5%;
 }
 
+.eventBar {
+  width: 100%;
+}
+
+#about {
+  width: 100%;
+}
+
 .center {
   margin-left: 5%;
   margin-bottom: 20%;
+  margin-right: 5%;
 }
 
-.eventSolus{
+.eventSolus {
   display: none;
+  width: 100%;
 }
 
 .textMerch {
@@ -184,6 +202,7 @@ body {
 
 .grid {
   display: flex;
+  margin-right: 50%;
 }
 
 .navOptions {
@@ -192,6 +211,7 @@ body {
   margin-top: 2%;
   margin-left: 32%;
   justify-items: center;
+  z-index: 1;
 }
 
 .socialMedia {
@@ -218,6 +238,9 @@ body {
   margin-bottom: 20%;
 }
 
+#widthHundred {
+  width: 100%;
+}
 
 .place {
   margin-bottom: 2%;
@@ -279,6 +302,48 @@ body {
   margin-top: 20%;
 }
 
+.waitList {
+  background-color: rgb(61, 58, 60);
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+  margin-right: 5%;
+  border-radius: 25px;
+  display: none;
+}
+
+.waitListContainer {
+  height: 100%;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #E84438;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -328,6 +393,7 @@ video {
 
 .merch {
   padding-bottom: 10%;
+  width: 100%;
 }
 
 /*
@@ -338,6 +404,10 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+.widthHundred {
+  width: 100%;
 }
 
 /*
@@ -412,13 +482,105 @@ textarea {
 .cardGrid {
 
   display: flex;
+  justify-content: center;
 }
 
 .navBarContainer {
-  position: sticky;
+  position: absolute;
   top: 0;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(0px);
   z-index: 2;
+  background: '';
+  width: 100%;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: fit-content;
+  margin-right: auto;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 85%;
+  bottom: 80px;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.textInput {
+  background: transparent;
+  background-image: url(/img/Input.png);
+  width: 1396px;
+  height: 55px;
+}
+
+.formRegister {
+  position: relative;
+  width: 96%;
+  z-index: 1;
+  margin-left: 2%;
+  background-color: rgb(61, 58, 60);
+  display: inline-grid;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+#OptionsForTickets {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.textBlr {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .archiveSolus {
@@ -427,6 +589,102 @@ textarea {
 
 .hero {
   width: 100%;
+}
+
+#heroImage {
+  filter: blur(50px);
+  width: 100%;
+}
+
+#whiteBoundry {
+  opacity: 0;
+}
+
+.blur {
+  -webkit-animation: blur 0.5s linear forwards;
+  -moz-animation: blur 0.5s linear forwards;
+  -ms-animation: blur 0.5s linear forwards;
+  -o-animation: blur 0.5s linear forwards;
+  animation: blur 0.5s linear forwards;
+}
+
+.delay {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+#merchPage {
+  display: none;
+  padding-top: 15%;
+}
+
+.merchContainer {
+  margin-left: 5%;
+  display: flex;
+}
+
+.rightText {
+  display: block;
+  float: left;
+}
+
+.merchText {
+  margin-left: 10%;
+}
+
+.options_button {
+  padding-top: 10%;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+.white {
+  color: white;
+  margin-left: 2%;
+}
+
+.waitListText {
+  position: absolute;
+  left: 40%;
+  padding-top: 50px;
+  z-index: 1;
+}
+
+.red {
+  left: 80%;
+  position: relative;
+  bottom: 150px;
+}
+
+.waitListForm {
+  margin-left: 9%;
+}
+
+.completeButton {
+  float: right;
+}
+
+@-webkit-keyframes blur {
+  to {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@-moz-keyframes blur {
+  to {
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes blur {
+  to {
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    filter: blur(0);
+  }
 }
 
 /*
