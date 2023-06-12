@@ -185,7 +185,7 @@ function moveToDiv(scrollToDiv) {
 function showWaitList() {
     if (document.getElementById('waitList').style.display == 'none') {
         document.getElementById('waitList').style.display = 'block';
-        $(document.getElementById('waitList')).animate({'height':'100%'},'slow')
+        $(document.getElementById('waitList')).animate({ 'height': '100%' }, 'slow')
         document.getElementById('waitList').scrollIntoView({
             behavior: `smooth`,
         });
@@ -207,11 +207,30 @@ function showRegister(eventNo) {
         delayInMilliseconds = 400;
         setTimeout(function () {
             $(document.getElementById(eventNo).parentElement).append(this.createForm(eventNo));
+            $("#register").submit(function(e) {
+
+                e.preventDefault(); // avoid to execute the actual submit of the form.
+            
+                var form = $(this);
+                var actionUrl = form.attr('action');
+                console.log(actionUrl);
+                
+                $.ajax({
+                    type: "POST",
+                    url: actionUrl,
+                    data: form.serialize(), // serializes the form's elements.
+                    success: function(data)
+                    {
+                    }
+                });
+            });
         }, delayInMilliseconds);
         console.log();
-        $('input[type="checkbox"]').on('change', function() {
+        $('input[type="checkbox"]').on('change', function () {
             $('input[name="' + this.name + '"]').not(this).prop('checked', false);
         });
+        
+        
     } else {
         console.log($(document.getElementById(eventNo).parentElement).children('#register').length);
         $(document.getElementById(eventNo).parentElement).children('#register').remove();
@@ -226,28 +245,30 @@ function showRegister(eventNo) {
 
 }
 
+
 function createForm(eventNo) {
-    html = '<form action="/action_page.php" class="formRegister" id="register">';
+
+    html = '<form action="http://127.0.0.1:8000/api/events" class="formRegister" id="register" method="post" target="_blank">';
     html += '<img for="fname" src="img/Input Text Label.png" style="padding-top:5%"><br>'
-    html += '<input type="text" id="fname" name="fname" value="first and second name" class="textInput"><br>'
+    html += '<input type="text" id="name" name="name" value="first and second name" class="textInput"><br>'
     html += '<img for="fname" src="img/Input Text Label (1).png"><br>'
-    html += '<input type="text" id="lname" name="lname" value="email address" class="textInput"><br><br>'
+    html += '<input type="text" id="email" name="email" value="email address" class="textInput"><br><br>'
     html += '<img for="fname" src="img/Input Text Label (2).png"><br>'
-    html += '<input type="text" id="lname" name="lname" value="email address" class="textInput"><br><br>'
+    html += '<input type="text" id="smhandle" name="smhandle" value="email address" class="textInput"><br><br>'
     html += '<img for="fname" src="img/Input Text Label (3).png"><br>'
-    html += '<input type="text" id="lname" name="lname" value="email address" class="textInput"><br><br>'
+    html += '<input type="text" id="phno" name="phno" value="email address" class="textInput"><br><br>'
     html += '<img for="fname" src="img/Input Text Label (4).png"><br>'
-    html += '<input type="text" id="lname" name="lname" value="email address" class="textInput"><br><br>'
+    html += '<input type="text" id="age" name="age" value="email address" class="textInput"><br><br>'
     html += '<img for="fname" src="img/Input Text Label (5).png"><br>'
-    html += '<input type="text" id="lname" name="lname" value="email address" class="textInput"><br><br>'
-    html += '<div><input type="radio" id="male" name="male" value="male">'
+    html += '<input type="text" id="homeaddress" name="homeaddress" value="email address" class="textInput"><br><br>'
+    html += '<div><input type="radio" id="sex" name="sex" value="male">'
     html += '<label for="male" class="white">MALE</label><br><br>'
-    html += '<input type="radio" id="female" name="female" value="female">'
+    html += '<input type="radio" id="sex" name="sex" value="female">'
     html += '<label for="female" class="white">FEMALE</label><br><br>'
-    html += '<input type="radio" id="other" name="other" value="others">'
+    html += '<input type="radio" id="sex" name="sex" value="others">'
     html += '<label for="others" class="white">OTHERS</label><br><br></div>'
-    html += '<img src="img/Dropdown Title.png" for="OptionsForTickets"><br><select id="OptionsForTickets" name="OptionsForTickets"><option value="opt">PASS OPTIONS</option><option value="SOLO">SOLO PASS 750/-</option><option value="group">GROUP PASS /-(min, 3pax)</option><option value="vip">VIP PASS 1500/-(perks + merch)</option></select>'
-    html += '<div class="options_button"><img src="img/Buttons (1).png" onclick="showRegister('+eventNo+')"><img src="img/Buttons.png" class="completeButton"></div>'
+    html += '<img src="img/Dropdown Title.png" for="ticketoption"><br><select id="ticketoption" name="ticketoption"><option value="opt">PASS OPTIONS</option><option value="SOLO">SOLO PASS 750/-</option><option value="group">GROUP PASS /-(min, 3pax)</option><option value="vip">VIP PASS 1500/-(perks + merch)</option></select>'
+    html += '<div class="options_button"><img src="img/Buttons (1).png" onclick="showRegister(' + eventNo + ')"><button type="submit"><img src="img/Buttons.png" class="completeButton"></button></div>'
     html += '</form>'
     console.log("reached here in create");
     return html;
@@ -263,6 +284,23 @@ $(window).bind('touchmove', function (e) {
 
 
 $(document).ready(function () {
+    $("#waitlist").submit(function(e) {
+
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    
+        var form = $(this);
+        var actionUrl = form.attr('action');
+        console.log(actionUrl);
+        
+        $.ajax({
+            type: "POST",
+            url: actionUrl,
+            data: form.serialize(), // serializes the form's elements.
+            success: function(data)
+            {
+            }
+        });
+    });
     var NavTop = $('.navBarContainer').offset().top;
     var Nav = function () {
         var scrollTop = $(window).scrollTop();
@@ -271,7 +309,7 @@ $(document).ready(function () {
             // $('.navBarContainer').animate({'backdrop-filter':'blur(50px)'},'slow');
             $('.navBarContainer').css('backdrop-filter', 'blur(20px)');
         } else {
-            $('.navBarContainer').css('position', 'absolute');
+            $('.navBarContainer').css('position', 'relative');
             $('.navBarContainer').css('backdrop-filter', 'blur(0px)');
 
         }

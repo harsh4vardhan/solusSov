@@ -113,10 +113,11 @@ body {
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   html {
     zoom: .2;
+    max-zoom: .2;
   }
 
   .navBarContainer {
-    zoom: 1.8;
+    zoom: 1.7;
     width: 100%;
   }
 
@@ -208,10 +209,10 @@ body {
 .navOptions {
   position: absolute;
   display: flex;
-  margin-top: 2%;
   margin-left: 32%;
   justify-items: center;
   z-index: 1;
+  font-size: x-large;
 }
 
 .socialMedia {
@@ -486,13 +487,33 @@ textarea {
 }
 
 .navBarContainer {
-  position: absolute;
+  position: relative;
   top: 0;
   backdrop-filter: blur(0px);
   z-index: 2;
   background: '';
   width: 100%;
 }
+
+.footerOptionsIcon {
+  z-index: 1;
+  
+  color: white;
+  font-family: myFirstFont;
+  font-weight: 1;
+  
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src:url("/doc/Bowser.ttf");
+  
+}
+
+.footerOptionsIcon:hover {
+  text-shadow: 0 0 20px #fff, 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+}
+
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {

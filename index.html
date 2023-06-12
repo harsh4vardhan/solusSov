@@ -41,11 +41,16 @@
         <img src="img/Mask group (3).png">
       </div>
       <div class="navOptions">
-        <img onclick="home()" src="img/HOME.png" class="footerOptionsIcon">
+        <h1 class="footerOptionsIcon" onclick="home()">HOME</h1>
+        <h1 class="footerOptionsIcon" onclick="archive()">ABOUT</h1>
+        <h1 class="footerOptionsIcon"  onclick="about()">ARCHIVE</h1>
+        <h1 class="footerOptionsIcon" onclick="events()">EVENTS</h1>
+        <h1 class="footerOptionsIcon" onclick="merch()">MERCH</h1>
+        <!-- <img onclick="home()" src="img/HOME.png" class="footerOptionsIcon">
         <img onclick="archive()" src="img/ARCHIVE.png" class="footerOptionsIcon">
         <img onclick="about()" src="img/ABOUT (1).png " class="footerOptionsIcon">
         <img onclick="events()" src="img/EVENTS (1).png" class="footerOptionsIcon">
-        <img onclick="merch()" src="img/MERCH (2).png" class="footerOptionsIcon">
+        <img onclick="merch()" src="img/MERCH (2).png" class="footerOptionsIcon"> -->
       </div>
       <div class="buyButton">
         <img src="img/Group 10 (1).png" onclick="events()">
@@ -74,32 +79,32 @@
           <img src="img/WAITLIST (1).png" class="waitListText">
           <img src="img/BOM (2).png" class="red">
         </div>
-        <form class="waitListForm">
+        <form class="waitListForm" action="http://127.0.0.1:8000/api/merchs" method="post" id="waitlist">
           <img for="fname" src="img/Input Text Label.png"><br>
-          <input type="text" id="fname" name="fname" value="first and second name" class="textInput"><br><br>
+          <input type="text" id="name" name="name" value="first and second name" class="textInput"><br><br>
           <img for="fname" src="img/Input Text Label (1).png"><br>
-          <input type="text" id="fname" name="fname" value="email address" class="textInput"><br><br>
+          <input type="text" id="email" name="email" value="email address" class="textInput"><br><br>
           <img for="fname" src="img/Input Text Label (2).png"><br>
-          <input type="text" id="fname" name="fname" value="social media handle" class="textInput"><br><br>
+          <input type="text" id="smhandle" name="smhandle" value="social media handle" class="textInput"><br><br>
           <img for="fname" src="img/Input Text Label (3).png"><br>
-          <input type="text" id="fname" name="fname" value="phone number" class="textInput"><br><br>
+          <input type="text" id="phno" name="phno" value="phone number" class="textInput"><br><br>
           <img for="fname" src="img/Input Text Label (4).png"><br>
-          <input type="text" id="fname" name="fname" value="age" class="textInput"><br><br>
+          <input type="text" id="age" name="age" value="age" class="textInput"><br><br>
           <img for="fname" src="img/Input Text Label (5).png"><br>
-          <input type="text" id="fname" name="fname" value="home address" class="textInput"><br><br>
-          <input type="radio" id="html" name="fav_language" value="HTML">
+          <input type="text" id="homeaddress" name="homeaddress" value="home address" class="textInput"><br><br>
+          <input type="radio" id="size" name="size" value="small">
           <label for="html" class="white">SMALL</label><br><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
+          <input type="radio" id="size" name="size" value="medium">
           <label for="css" class="white">MEDIUM</label><br><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <input type="radio" id="size" name="size" value="large">
           <label for="javascript" class="white">LARGE</label><br><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <input type="radio" id="size" name="size" value="elarge">
           <label for="javascript" class="white">EXTRA LARGE</label><br><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <input type="radio" id="size" name="size" value="twoelarge">
           <label for="javascript" class="white">2 EXTRA LARGE</label><br><br>
           <div class="options_button">
             <img src="img/Buttons (1).png" onclick="showWaitList()">
-            <img src="img/Buttons.png" class="completeButton">
+            <button type="submit"><img src="img/Buttons.png" ></button>
           </div>
         </form>
       </div>
@@ -218,10 +223,11 @@
     </div>
     <div class="merch" id="home" id="widthHundred">
       <div class="leftText">
-        <img src="img/MERCH.png" class="textMerch">
+        <img src="img/MERC  H.png" class="textMerch">
         <img src="img/DLP 8 EDITION.png" class="textMerch">
         <img src="img/Allows special access to all Solus Sovereign events for 2023.png" class="textMerch">
-        <img src="img/Group 44.png" class="textMerch">
+        <img src="img/Group 44.
+        png" class="textMerch">
       </div>
       <img src="img/STYLE.png" id="widthHundred" onclick="merch()">
     </div>
