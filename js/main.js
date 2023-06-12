@@ -248,7 +248,7 @@ function showRegister(eventNo) {
 
 function createForm(eventNo) {
 
-    html = '<form action="http://127.0.0.1:8000/api/events" class="formRegister" id="register" method="post" target="_blank">';
+    html = '<form action="http://16.171.12.189/api/events" class="formRegister" id="register" method="post" target="_blank">';
     html += '<img for="fname" src="img/Input Text Label.png" style="padding-top:5%"><br>'
     html += '<input type="text" id="name" name="name" value="first and second name" class="textInput"><br>'
     html += '<img for="fname" src="img/Input Text Label (1).png"><br>'
