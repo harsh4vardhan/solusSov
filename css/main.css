@@ -168,8 +168,11 @@ body {
 
 .eventBar {
   width: 100%;
+  display: block;
 }
-
+#eventOne {
+  display: block;
+}
 #about {
   width: 100%;
 }
