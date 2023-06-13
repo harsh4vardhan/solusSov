@@ -320,4 +320,8 @@ $(document).ready(function () {
     $(window).scroll(function () {
         Nav();
     });
+
+    $('img').each(function() {
+        $(this).attr('loading','lazy');
+    })
 });
