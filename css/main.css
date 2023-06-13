@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
+
 }
 
 html {
@@ -41,7 +43,8 @@ body {
 .archive {
   margin-bottom: 10%;
   vertical-align: middle;
-  margin: 6%;
+  width: 100%;
+  display: grid;
 }
 
 /* Style the links inside the navigation bar */
@@ -85,11 +88,10 @@ body {
 
 
 .card {
-  margin-right: 2%;
+  margin: auto;
 }
 
 .upcomingEvent {
-  background-color: black;
   width: 100%;
   display: absolute;
 
@@ -98,10 +100,9 @@ body {
 
 .centerText {
   position: absolute;
-  display: inline-grid;
-  margin-left: 35%;
+  display: grid;
   margin-top: 20%;
-  justify-items: center;
+  justify-self: center;
   z-index: 1;
 }
 
@@ -114,6 +115,7 @@ body {
   html {
     zoom: .2;
     max-zoom: .2;
+    min-zoom: .2;
   }
 
   .navBarContainer {
@@ -142,11 +144,13 @@ body {
 .eventGrid {
   position: absolute;
   margin-top: 10%;
-  margin-left: 5%;
   display: flex;
   width: 100%;
   height: fit-content;
   z-index: 0;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .UpcomingText {
@@ -157,7 +161,6 @@ body {
 .centerArchive {
   position: relative;
   display: inline-grid;
-  margin-left: 35%;
   margin-top: 5%;
   justify-items: center;
   padding-bottom: 5%;
@@ -203,7 +206,7 @@ body {
 
 .grid {
   display: flex;
-  margin-right: 50%;
+  justify-content: center;
 }
 
 .navOptions {
@@ -237,6 +240,7 @@ body {
 
 .textHero {
   margin-bottom: 20%;
+  justify-self: center;
 }
 
 #widthHundred {
@@ -274,7 +278,7 @@ body {
   display: none;
   margin-bottom: 10%;
   vertical-align: middle;
-  margin: 6%;
+  padding-top: 10%;
 }
 
 .mosaic {
@@ -484,6 +488,7 @@ textarea {
 
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .navBarContainer {
@@ -511,7 +516,7 @@ textarea {
 }
 
 .footerOptionsIcon:hover {
-  text-shadow: 0 0 20px #fff, 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue;
+  text-shadow: 0 0 20px #fff, 0 0 10px blue, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black;
 }
 
 
@@ -520,8 +525,9 @@ textarea {
   background-color: transparent;
   width: 300px;
   height: fit-content;
-  margin-right: auto;
+  margin: auto;
   perspective: 1000px;
+  padding-right: 7%;
   /* Remove this if you don't want the 3D effect */
 }
 
@@ -535,7 +541,7 @@ textarea {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.eventGrid:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -593,7 +599,7 @@ textarea {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: dodgerblack;
   color: white;
   transform: rotateY(180deg);
 }
@@ -610,6 +616,7 @@ textarea {
 
 .hero {
   width: 100%;
+  display: grid;
 }
 
 #heroImage {

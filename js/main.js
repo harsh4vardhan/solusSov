@@ -6,7 +6,7 @@ function about() {
     }
     var elmsAbout = document.querySelectorAll("[id='about']");
     for (var i = 0; i < elmsAbout.length; i++) {
-        elmsAbout[i].style.display = 'block';
+        elmsAbout[i].style.display = 'grid';
     }
     var elmsArchive = document.querySelectorAll("[id='archive']");
     for (var i = 0; i < elmsArchive.length; i++) {
@@ -26,7 +26,7 @@ function home() {
     window.scrollTo(0, 0);
     var elmsHome = document.querySelectorAll("[id='home']");
     for (var i = 0; i < elmsHome.length; i++) {
-        elmsHome[i].style.display = 'block';
+        elmsHome[i].style.display = 'grid';
     }
     var elmsAbout = document.querySelectorAll("[id='about']");
     for (var i = 0; i < elmsAbout.length; i++) {
@@ -62,7 +62,7 @@ function archive() {
     }
     var elmsArchive = document.querySelectorAll("[id='archive']");
     for (var i = 0; i < elmsArchive.length; i++) {
-        elmsArchive[i].style.display = 'block';
+        elmsArchive[i].style.display = 'grid';
     }
     var elmsEvents = document.querySelectorAll("[id='events']");
     for (var i = 0; i < elmsEvents.length; i++) {
