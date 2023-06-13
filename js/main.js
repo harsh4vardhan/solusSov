@@ -323,5 +323,6 @@ $(document).ready(function () {
 
     $('img').each(function() {
         $(this).attr('loading','lazy');
+        $(this).attr('decoding','async')
     })
 });
