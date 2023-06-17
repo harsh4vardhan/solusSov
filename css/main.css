@@ -169,6 +169,13 @@ body {
     margin-left: 20% !important;
     display: none;
   }
+  .phoneOptions {
+    margin-top: 10%;
+    margin-left: 61%;
+    font-family: myFirstFont;
+    font-size: 2rem;
+    font-weight: 1;
+  }
 
   .buyButton {
     display: none;
