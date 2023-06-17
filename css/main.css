@@ -118,7 +118,7 @@ body {
 }
 
 .HambugerBarOptions {
-  
+
   background: '';
   backdrop-filter: blur(20px);
   height: 5200px;
@@ -149,23 +149,27 @@ body {
     max-zoom: .2;
     min-zoom: .2;
   }
+
   .text {
     width: 100% !important;
   }
+
   .navBarContainer {
-   display: none;
+    display: none;
   }
 
   .footerOptionsIcon {
     zoom: 0.2;
     display: none;
   }
+
   .hamburgerButton {
     display: block;
     height: 100px;
     width: 100px;
 
   }
+
   .imageforbutton {
     height: 70%;
     width: 70%;
@@ -175,6 +179,7 @@ body {
     margin-left: 20% !important;
     display: none;
   }
+
   .phoneOptions {
     margin-top: 10%;
     margin-left: 61%;
@@ -187,7 +192,7 @@ body {
     display: none;
   }
 
- 
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1920px) {
@@ -196,35 +201,37 @@ body {
     max-zoom: .4;
     min-zoom: .4;
     width: 100%;
-    
+
   }
+
   .text {
     width: 100vw;
     margin: 0;
   }
+
   .navBarContainer {
     width: 100%;
   }
 
 
 
- 
+
 }
 
 #waitlistConfirm {
   position: sticky;
-    display: none;
-    bottom: -34rem;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    background: blur(10px);
-    margin: auto;
-    backdrop-filter: blur(20px);
-    width: 100%;
+  display: none;
+  bottom: -34rem;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background: blur(10px);
+  margin: auto;
+  backdrop-filter: blur(20px);
+  width: 100%;
 }
 
-#submitButton{
+#submitButton {
   float: right;
   margin-right: 13%;
   padding: 11px 20px 0px 20px;
@@ -395,22 +402,28 @@ body {
   margin-right: 10%;
   max-width: max-content;
   max-height: min-content;
+  display: grid;
+  width: 2px;
+  height: 100px;
 }
 
 #backgroundTshirtSize {
   z-index: -1;
-    position: relative;
-    bottom: 113px;
-    right: 69px;
+  position: relative;
+  bottom: 113px;
+  right: 69px;
+  vertical-align: middle;
 }
-.labelForSize{
+
+.labelForSize {
   font-family: myFirstFont;
   font-size: x-large;
 }
 
-.tshirtSizeContainer{
+.tshirtSizeContainer {
   display: flex;
 }
+
 .buyButtonPhone {
   position: absolute;
   margin-left: 90%;
@@ -753,7 +766,7 @@ textarea {
   backface-visibility: hidden;
 }
 
-.labelForPhone{
+.labelForPhone {
   color: white;
   font-family: myFirstFont;
   font-size: xxx-large;

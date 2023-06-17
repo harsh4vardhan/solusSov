@@ -245,7 +245,7 @@ function showRegister(eventNo) {
 }
 
 function openHamburgerBar() {
-    if(document.getElementById('HambugerBarOptions').style.display == 'none') {
+    if (document.getElementById('HambugerBarOptions').style.display == 'none') {
         console.log('here');
         document.getElementById('HambugerBarOptions').style.display = 'block';
     } else {
@@ -282,14 +282,27 @@ function createForm(eventNo) {
     return html;
 }
 function onClickTshirtSize(id) {
+    children = document.getElementById(id).parentElement.children;
+
+    for (let i = 0; i < children.length; i++) {
+        console.log('hero0',children[i]);
+        if (children[i].children.length >0) {
+            console.log('here2',children[i])
+            elementRemove = children[i].children[0];
+            elementRemove.remove();
+        }
+    }
     ele = document.getElementById(id);
     background = document.createElement('img');
-    background.setAttribute('src','img/red2.png')
-    background.setAttribute('id','backgroundTshirtSize')
- 
+    background.setAttribute('src', 'img/red2.png')
+    background.setAttribute('id', 'backgroundTshirtSize')
+
     ele.append(background);
     background.style.bottom = '103px';
     background.style.right = '69px';
+    console.log('here1',children)
+   
+
 }
 
 function showAnimation() {
@@ -304,7 +317,7 @@ function showAnimation() {
     }, delayInMilliseconds);
 }
 
-$(window).bind('mousewheel DOMMouseScroll', function(event){
+$(window).bind('mousewheel DOMMouseScroll', function (event) {
     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
         $('.navBarContainer').css('display', 'block');
     }
@@ -328,14 +341,13 @@ $(document).ready(function () {
             type: "POST",
             url: actionUrl,
             data: form.serialize(), // serializes the form's elements.
-            success: function(data)
-            {
+            success: function (data) {
             }
         });
     });
     var NavTop = $('.navBarContainer').offset().top;
     var Nav = function () {
-        
+
         var scrollTop = $(window).scrollTop();
         if (scrollTop > NavTop) {
 
