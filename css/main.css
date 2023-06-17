@@ -195,7 +195,7 @@ body {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1920px) {
+@media only screen and (min-width: 600px) and (max-width: 1800px) {
   html {
     zoom: .4;
     max-zoom: .4;
@@ -211,6 +211,10 @@ body {
 
   .navBarContainer {
     width: 100%;
+  }
+
+  .footerOptionsIcon{
+    margin-left: 10% !important;
   }
 
 
