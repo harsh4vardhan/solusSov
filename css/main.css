@@ -152,6 +152,19 @@ body {
   .navBarContainer {
    display: none;
   }
+  .HambugerBarOptions {
+  
+    background-color: blur(10px);
+    backdrop-filter: blur(20px);
+    height: 5200px;
+    width: 37%;
+    position: absolute;
+    z-index: 1;
+    float: right;
+    margin-left: 62%;
+    display: none;
+    color: white;
+  }
 
   .footerOptionsIcon {
     zoom: 0.2;
