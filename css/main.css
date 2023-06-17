@@ -112,23 +112,66 @@ body {
   display: none;
 }
 
+.hamburgerButton {
+  float: right;
+  display: none;
+}
+
+.HambugerBarOptions {
+  background-color: white;
+  height: 2500px;
+  width: 37%;
+  position: absolute;
+  z-index: 1;
+  float: right;
+  margin-left: 62%;
+  display: none;
+}
+
+.phoneOptions {
+  margin-top: 10%;
+  margin-left: 61%;
+  font-family: myFirstFont;
+  font-size: 6rem;
+  font-weight: 1;
+}
+
+
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   html {
     zoom: .2;
     max-zoom: .2;
     min-zoom: .2;
   }
-
+  .text {
+    width: 100% !important;
+  }
   .navBarContainer {
-    width: 100%;
+   display: none;
   }
 
   .footerOptionsIcon {
     zoom: 0.2;
+    display: none;
+  }
+  .hamburgerButton {
+    display: block;
+    height: 100px;
+    width: 100px;
+
+  }
+  .imageforbutton {
+    height: 70%;
+    width: 70%;
   }
 
   .navOptions {
     margin-left: 20% !important;
+    display: none;
+  }
+
+  .buyButton {
+    display: none;
   }
 
  
@@ -151,9 +194,6 @@ body {
   }
 
 
-  .navOptions {
-    margin-left: 20% !important;
-  }
 
  
 }
@@ -346,6 +386,24 @@ body {
 
 .tshirtSizeContainer{
   display: flex;
+}
+.buyButtonPhone {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 2.5rem;
+  float: right;
+  height: 2.5rem;
+  border-radius: 12px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: myFirstFont;
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
 }
 
 .buyButton {

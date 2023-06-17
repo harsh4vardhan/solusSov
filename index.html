@@ -36,6 +36,16 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
   <div class="mainContainerHome">
+    <div class="HambugerBarOptions" id="HambugerBarOptions">
+      <h1 class="phoneOptions" onclick="home()">HOME</h1>
+      <h1 class="phoneOptions" onclick="about()">ABOUT</h1>
+      <h1 class="phoneOptions" onclick="archive()">ARCHIVE</h1>
+      <h1 class="phoneOptions" onclick="events()">EVENTS</h1>
+      <h1 class="phoneOptions" onclick="merch()">MERCH</h1>
+      <button class="buyButtonPhone">
+        JOIN COMMUNITY
+      </button>
+    </div>
     <div class="navBarContainer" id="navbar">
       <div class="iconNav">
         <img src="img/Mask group (3).png">
@@ -46,12 +56,14 @@
         <h1 class="footerOptionsIcon" onclick="archive()">ARCHIVE</h1>
         <h1 class="footerOptionsIcon" onclick="events()">EVENTS</h1>
         <h1 class="footerOptionsIcon" onclick="merch()">MERCH</h1>
+       
         <!-- <img onclick="home()" src="img/HOME.png" class="footerOptionsIcon">
         <img onclick="archive()" src="img/ARCHIVE.png" class="footerOptionsIcon">
         <img onclick="about()" src="img/ABOUT (1).png " class="footerOptionsIcon">
         <img onclick="events()" src="img/EVENTS (1).png" class="footerOptionsIcon">
         <img onclick="merch()" src="img/MERCH (2).png" class="footerOptionsIcon"> -->
       </div>
+      <button class="hamburgerButton" onclick="openHamburgerBar()"><img src="img/Group 148.png" alt="" class="imageforbutton"></button>
       <button class="buyButton">
         JOIN COMMUNITY
       </button>
