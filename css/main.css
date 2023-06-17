@@ -153,7 +153,6 @@ body {
    display: none;
   }
   .HambugerBarOptions {
-  
     background-color: blur(10px);
     backdrop-filter: blur(20px);
     height: 5200px;
@@ -164,6 +163,8 @@ body {
     margin-left: 62%;
     display: none;
     color: white;
+    position: sticky;
+    margin-top: 20%;
   }
 
   .footerOptionsIcon {

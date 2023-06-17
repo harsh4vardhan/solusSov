@@ -253,6 +253,7 @@ function openHamburgerBar() {
     }
 }
 
+
 function createForm(eventNo) {
 
     html = '<form action="http://16.171.12.189/api/events" class="formRegister" id="register" method="post" target="_blank">';
@@ -303,13 +304,6 @@ function showAnimation() {
     }, delayInMilliseconds);
 }
 
-$(window).bind('mousewheel', function (e) {
-    document.getElementById('navbar').style.display = 'block';
-});
-
-$(window).bind('touchmove', function (e) {
-    document.getElementById('navbar').style.display = 'block';
-});
 
 
 $(document).ready(function () {
