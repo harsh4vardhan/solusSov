@@ -120,7 +120,7 @@ body {
 .HambugerBarOptions {
   
   background: '';
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(20px);
   height: 5200px;
   width: 37%;
   position: absolute;
@@ -129,7 +129,7 @@ body {
   margin-left: 62%;
   display: none;
   color: white;
-
+  background-color: black;
 }
 
 .phoneOptions {
