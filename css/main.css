@@ -134,32 +134,7 @@ body {
  
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1920px) {
-  html {
-    zoom: .4;
-    max-zoom: .4;
-    min-zoom: .4;
-    width: 100%;
-    
-  }
-  .text {
-    width: 100vw;
-    margin: 0;
-  }
-  .navBarContainer {
-    width: 100%;
-  }
 
-  .footerOptionsIcon {
-    zoom: 0.2;
-  }
-
-  .navOptions {
-    margin-left: 20% !important;
-  }
-
- 
-}
 
 #waitlistConfirm {
   position: sticky;
