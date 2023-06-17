@@ -43,7 +43,7 @@
       <div class="navOptions">
         <h1 class="footerOptionsIcon" onclick="home()">HOME</h1>
         <h1 class="footerOptionsIcon" onclick="about()">ABOUT</h1>
-        <h1 class="footerOptionsIcon"  onclick="archive()">ARCHIVE</h1>
+        <h1 class="footerOptionsIcon" onclick="archive()">ARCHIVE</h1>
         <h1 class="footerOptionsIcon" onclick="events()">EVENTS</h1>
         <h1 class="footerOptionsIcon" onclick="merch()">MERCH</h1>
         <!-- <img onclick="home()" src="img/HOME.png" class="footerOptionsIcon">
@@ -69,7 +69,13 @@
           <img src="img/V2 MERCH.png"><br><br><br>
           <img src="img/Official merchandise for DLP 8.png"><br><br><br>
           <img src="img/- MRP.png"><br><br><br><br>
-          <img src="img/S M L XL XXL.png"><br><br><br><br>
+          <div class="tshirtSizeContainer">
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('S')" id="S">S</h2>
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('M')" id="M">M</h2>
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('L')" id="L">L</h2>
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('X')" id="X">X</h2>
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('XL')" id="XL">XL</h2>
+          </div>
           <img src="img/Rectangle 206.png"><br><br><br><br>
           <img src="img/Group 10 (2).png" onclick="showWaitList()"><br><br><br><br>
         </div>
@@ -104,7 +110,7 @@
           <label for="javascript" class="white">2 EXTRA LARGE</label><br><br>
           <div class="options_button">
             <img src="img/Buttons (1).png" onclick="">
-            <button type="submit" onclick="showAnimation()" id="submitButton"><img src="img/Buttons.png" ></button>
+            <button type="submit" onclick="showAnimation()" id="submitButton"><img src="img/Buttons.png"></button>
           </div>
         </form>showWaitList()
       </div>
@@ -153,6 +159,8 @@
         <div class="eventBar" id="eventBar2">
           <img src="img/Group 82.png" onclick="showRegister('eventTwo')" id="eventTwo" class="widthHundred">
         </div>
+        <img src="/img/waitlistConfirm.png" id="waitlistConfirm">
+
       </div>
     </div>
 
@@ -248,10 +256,10 @@
     <img src="img/Asset 17@3x.png">
   </div>
   <div class="footerOptions">
-    <img src="img/ABOUT.png" class="footerOptionsIcon"  onclick="about()">
-    <img src="img/ARCHIVES.png" class="footerOptionsIcon"  onclick="archive()">
-    <img src="img/EVENTS.png" class="footerOptionsIcon"  onclick="events()">
-    <img src="img/MERCH (1).png" class="footerOptionsIcon"  onclick="merch()">
+    <img src="img/ABOUT.png" class="footerOptionsIcon" onclick="about()">
+    <img src="img/ARCHIVES.png" class="footerOptionsIcon" onclick="archive()">
+    <img src="img/EVENTS.png" class="footerOptionsIcon" onclick="events()">
+    <img src="img/MERCH (1).png" class="footerOptionsIcon" onclick="merch()">
     <img src="img/NEWS.png" class="footerOptionsIcon">
     <img src="img/Line 2.png" class="footerOptionsIcon">
   </div>

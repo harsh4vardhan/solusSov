@@ -260,27 +260,35 @@ function createForm(eventNo) {
     html += '<input type="text" id="age" name="age" value="email address" class="textInput"><br><br>'
     html += '<img for="fname" src="img/Input Text Label (5).png" class="labelForPhone"><br>'
     html += '<input type="text" id="homeaddress" name="homeaddress" value="email address" class="textInput"><br><br>'
-    html += '<div><input type="radio" id="sex" name="sex" value="male">'
+    html += '<div class="labelForSize"><input type="radio" id="sex" name="sex" value="male">'
     html += '<label for="male" class="white">MALE</label><br><br>'
     html += '<input type="radio" id="sex" name="sex" value="female">'
     html += '<label for="female" class="white">FEMALE</label><br><br>'
     html += '<input type="radio" id="sex" name="sex" value="others">'
     html += '<label for="others" class="white">OTHERS</label><br><br></div>'
-    html += '<img src="img/Dropdown Title.png" for="ticketoption"><br><select id="ticketoption" name="ticketoption"><option value="opt">PASS OPTIONS</option><option value="SOLO">SOLO PASS 750/-</option><option value="group">GROUP PASS /-(min, 3pax)</option><option value="vip">VIP PASS 1500/-(perks + merch)</option></select>'
-    html += '<div class="options_button"><img src="img/Buttons (1).png" onclick="showRegister(' + eventNo + ')"><button type="submit"><img src="img/Buttons.png" class="completeButton"></button></div>'
+    html += '<img src="img/Dropdown Title.png" for="ticketoption"><br><select class="labelForSize" id="ticketoption" name="ticketoption"><option value="opt">PASS OPTIONS</option><option value="SOLO">SOLO PASS 750/-</option><option value="group">GROUP PASS /-(min, 3pax)</option><option value="vip">VIP PASS 1500/-(perks + merch)</option></select>'
+    html += '<div class="options_button"><img src="img/Buttons (1).png" onclick="showRegister(' + eventNo + ')"><button class="next" type="submit" onclick="showAnimation()">NEXT</button></div>'
     html += '</form>'
     console.log("reached here in create");
     return html;
 }
+function onClickTshirtSize(id) {
+    ele = document.getElementById(id);
+    background = document.createElement('img');
+    background.setAttribute('src','img/red2.png')
+    background.setAttribute('id','backgroundTshirtSize')
+ 
+    ele.append(background);
+    background.style.bottom = '103px';
+    background.style.right = '69px';
+}
 
 function showAnimation() {
     document.getElementById('waitlistConfirm').style.display = 'grid';
-
     $(document.getElementById('waitlistConfirm')).animate({ 'opacity': '1' }, 'smooth')
     $(document.getElementById('waitlistConfirm')).animate({ '  backdrop-filter ': ': blur(10px)' }, 'slow')
     document.getElementById('navbar').style.display = 'none';
     delayInMilliseconds = 2000;
-
     setTimeout(function () {
         this.home();
         document.getElementById('waitlistConfirm').style.display = 'none';
