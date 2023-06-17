@@ -26,7 +26,6 @@ html {
 
 body {
   background-color: #1E1E1E;
-  max-width: 100%;
   overflow-x: clip;
   min-zoom: 1;
   max-zoom: 1;
@@ -140,8 +139,13 @@ body {
     zoom: .4;
     max-zoom: .4;
     min-zoom: .4;
+    width: 100%;
+    
   }
-
+  .text {
+    width: 100vw;
+    margin: 0;
+  }
   .navBarContainer {
     width: 100%;
   }
@@ -238,7 +242,7 @@ body {
 }
 
 .textMerch {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 
 .icon {
@@ -354,8 +358,8 @@ body {
   float: right;
   height: 2.5rem;
   border-radius: 12px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: myFirstFont;
   font-size: xx-large;
   background-color: black;
@@ -565,7 +569,10 @@ textarea {
 
 .text {
   position: relative;
-  margin: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: grid;
+  justify-content: center;
 }
 
 /*
