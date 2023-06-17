@@ -120,7 +120,7 @@ body {
 .HambugerBarOptions {
   
   background-color: blur(10px);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(0px);
   height: 5200px;
   width: 37%;
   position: absolute;
@@ -151,20 +151,6 @@ body {
   }
   .navBarContainer {
    display: none;
-  }
-  .HambugerBarOptions {
-    background-color: blur(10px);
-    backdrop-filter: blur(20px);
-    height: 5200px;
-    width: 37%;
-    position: absolute;
-    z-index: 1;
-    float: right;
-    margin-left: 62%;
-    display: none;
-    color: white;
-    position: sticky;
-    margin-top: 20%;
   }
 
   .footerOptionsIcon {
