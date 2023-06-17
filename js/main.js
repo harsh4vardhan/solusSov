@@ -207,20 +207,19 @@ function showRegister(eventNo) {
         delayInMilliseconds = 400;
         setTimeout(function () {
             $(document.getElementById(eventNo).parentElement).append(this.createForm(eventNo));
-            $("#register").submit(function(e) {
+            $("#register").submit(function (e) {
 
                 e.preventDefault(); // avoid to execute the actual submit of the form.
-            
+
                 var form = $(this);
                 var actionUrl = form.attr('action');
                 console.log(actionUrl);
-                
+
                 $.ajax({
                     type: "POST",
                     url: actionUrl,
                     data: form.serialize(), // serializes the form's elements.
-                    success: function(data)
-                    {
+                    success: function (data) {
                     }
                 });
             });
@@ -229,8 +228,8 @@ function showRegister(eventNo) {
         $('input[type="checkbox"]').on('change', function () {
             $('input[name="' + this.name + '"]').not(this).prop('checked', false);
         });
-        
-        
+
+
     } else {
         console.log($(document.getElementById(eventNo).parentElement).children('#register').length);
         $(document.getElementById(eventNo).parentElement).children('#register').remove();
@@ -249,17 +248,17 @@ function showRegister(eventNo) {
 function createForm(eventNo) {
 
     html = '<form action="http://16.171.12.189/api/events" class="formRegister" id="register" method="post" target="_blank">';
-    html += '<img for="fname" src="img/Input Text Label.png" style="padding-top:5%"><br>'
+    html += '<img for="fname" src="img/Input Text Label.png" style="padding-top:5%" class="labelForPhone"><br>'
     html += '<input type="text" id="name" name="name" value="first and second name" class="textInput"><br>'
-    html += '<img for="fname" src="img/Input Text Label (1).png"><br>'
+    html += '<img for="fname" src="img/Input Text Label (1).png" class="labelForPhone"><br>'
     html += '<input type="text" id="email" name="email" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (2).png"><br>'
+    html += '<img for="fname" src="img/Input Text Label (2).png" class="labelForPhone"><br>'
     html += '<input type="text" id="smhandle" name="smhandle" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (3).png"><br>'
+    html += '<img for="fname" src="img/Input Text Label (3).png" class="labelForPhone"><br>'
     html += '<input type="text" id="phno" name="phno" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (4).png"><br>'
+    html += '<img for="fname" src="img/Input Text Label (4).png" class="labelForPhone"><br>'
     html += '<input type="text" id="age" name="age" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (5).png"><br>'
+    html += '<img for="fname" src="img/Input Text Label (5).png" class="labelForPhone"><br>'
     html += '<input type="text" id="homeaddress" name="homeaddress" value="email address" class="textInput"><br><br>'
     html += '<div><input type="radio" id="sex" name="sex" value="male">'
     html += '<label for="male" class="white">MALE</label><br><br>'
@@ -274,6 +273,20 @@ function createForm(eventNo) {
     return html;
 }
 
+function showAnimation() {
+    document.getElementById('waitlistConfirm').style.display = 'grid';
+
+    $(document.getElementById('waitlistConfirm')).animate({ 'opacity': '1' }, 'smooth')
+    $(document.getElementById('waitlistConfirm')).animate({ '  backdrop-filter ': ': blur(10px)' }, 'slow')
+    document.getElementById('navbar').style.display = 'none';
+    delayInMilliseconds = 2000;
+
+    setTimeout(function () {
+        this.home();
+        document.getElementById('waitlistConfirm').style.display = 'none';
+    }, delayInMilliseconds);
+}
+
 $(window).bind('mousewheel', function (e) {
     document.getElementById('navbar').style.display = 'block';
 });
@@ -284,14 +297,14 @@ $(window).bind('touchmove', function (e) {
 
 
 $(document).ready(function () {
-    $("#waitlist").submit(function(e) {
+    $("#waitlist").submit(function (e) {
 
         e.preventDefault(); // avoid to execute the actual submit of the form.
-    
+
         var form = $(this);
         var actionUrl = form.attr('action');
         console.log(actionUrl);
-        
+
         $.ajax({
             type: "POST",
             url: actionUrl,
@@ -321,8 +334,8 @@ $(document).ready(function () {
         Nav();
     });
 
-    $('img').each(function() {
-        $(this).attr('loading','lazy');
-        $(this).attr('decoding','async')
+    $('img').each(function () {
+        $(this).attr('loading', 'lazy');
+        $(this).attr('decoding', 'async')
     })
 });

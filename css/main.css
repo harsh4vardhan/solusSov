@@ -28,6 +28,8 @@ body {
   background-color: #1E1E1E;
   max-width: 100%;
   overflow-x: clip;
+  min-zoom: 1;
+  max-zoom: 1;
 }
 
 /* Add a black background color to the top navigation */
@@ -123,14 +125,32 @@ body {
   }
 
   .footerOptionsIcon {
-    zoom: 0.4;
+    zoom: 0.2;
   }
 
   .navOptions {
     margin-left: 20% !important;
   }
 
-  .foot
+ 
+}
+
+#waitlistConfirm {
+  position: sticky;
+    display: none;
+    bottom: -34rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: blur(10px);
+    margin: auto;
+    backdrop-filter: blur(20px);
+    width: 100%;
+}
+
+.submitButton{
+  float: right;
+  margin-right: 10%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -271,9 +291,22 @@ body {
 
 .buyButton {
   position: absolute;
-  margin-left: 80%;
-  margin-top: 1%;
+  margin-left: 90%;
+  margin-top: 2.5rem;
   float: right;
+  height: 2.5rem;
+  border-radius: 12px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: myFirstFont;
+  font-size: xx-large;
+  background-color: black;
+  color: white;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+
 }
 
 .mainContainerHome {
