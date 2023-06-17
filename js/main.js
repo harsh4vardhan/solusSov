@@ -257,17 +257,17 @@ function openHamburgerBar() {
 function createForm(eventNo) {
 
     html = '<form action="http://16.171.12.189/api/events" class="formRegister" id="register" method="post" target="_blank">';
-    html += '<img for="fname" src="img/Input Text Label.png" style="padding-top:5%" class="labelForPhone"><br>'
+    html += '<label for="fname"  style="padding-top:5%" class="labelForPhone">YOUR NAME</label><br><br>'
     html += '<input type="text" id="name" name="name" value="first and second name" class="textInput"><br>'
-    html += '<img for="fname" src="img/Input Text Label (1).png" class="labelForPhone"><br>'
+    html += '<label for="fname" class="labelForPhone">EMAIL ADDRESS</label><br><br>'
     html += '<input type="text" id="email" name="email" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (2).png" class="labelForPhone"><br>'
+    html += '<label for="fname"class="labelForPhone">SOCIAL MEDIA HANDLE</label><br><br>'
     html += '<input type="text" id="smhandle" name="smhandle" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (3).png" class="labelForPhone"><br>'
+    html += '<label for="fname" class="labelForPhone">PHONE NUMBER</label><br>'
     html += '<input type="text" id="phno" name="phno" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (4).png" class="labelForPhone"><br>'
+    html += '<label for="fname" class="labelForPhone">AGE</label><br><br>'
     html += '<input type="text" id="age" name="age" value="email address" class="textInput"><br><br>'
-    html += '<img for="fname" src="img/Input Text Label (5).png" class="labelForPhone"><br>'
+    html += '<label for="fname"  class="labelForPhone">HOME ADDRESS</label><br>'
     html += '<input type="text" id="homeaddress" name="homeaddress" value="email address" class="textInput"><br><br>'
     html += '<div class="labelForSize"><input type="radio" id="sex" name="sex" value="male">'
     html += '<label for="male" class="white">MALE</label><br><br>'

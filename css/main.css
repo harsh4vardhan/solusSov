@@ -742,6 +742,13 @@ textarea {
   backface-visibility: hidden;
 }
 
+.labelForPhone{
+  color: white;
+  font-family: myFirstFont;
+  font-size: xxx-large;
+
+}
+
 .textInput {
   background: transparent;
   background-image: url(/img/Input.png);
