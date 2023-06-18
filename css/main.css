@@ -266,7 +266,7 @@ body {
 
 .eventGrid {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 6%;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -436,7 +436,7 @@ body {
 
 .labelForSize {
   font-family: myFirstFont;
-  font-size: x-large;
+  font-size: xxx-large;
 }
 
 .tshirtSizeContainer {
@@ -541,7 +541,7 @@ input[type='radio']:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
-  top: -2px;
+  top: -24px;
   left: -1px;
   position: relative;
   background-color: #d1d3d1;
@@ -803,6 +803,7 @@ textarea {
   background-image: url(/img/Input.png);
   width: 70vw;
   height: 55px;
+  border: none;
 }
 
 .formRegister {
