@@ -880,8 +880,8 @@ textarea {
 }
 
 .merchContainer {
-  margin-left: 5%;
   display: flex;
+  justify-content: space-around;
 }
 
 .rightText {
@@ -890,7 +890,6 @@ textarea {
 }
 
 .merchText {
-  margin-left: 10%;
 }
 
 .options_button {
