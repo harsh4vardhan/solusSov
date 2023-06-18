@@ -182,6 +182,18 @@ body {
     margin-top: 85%;
   }
 
+  #card1{
+    content: url("/img/RJ.png");
+    width: 20rem;
+  }
+
+
+  #card2{
+    
+    content: url("/img/RJ2.png");
+    width: 20rem;
+
+  }
   .imageforbutton {
     height: 70%;
     width: 70%;
