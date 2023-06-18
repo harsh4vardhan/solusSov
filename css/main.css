@@ -279,6 +279,7 @@ body {
 .UpcomingText {
   margin-bottom: 20%;
   z-index: 1;
+  width: 100%;
 }
 
 .centerArchive {
