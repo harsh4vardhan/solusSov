@@ -155,8 +155,7 @@ body {
   }
 
   #heroImage{
-    background: url(/img/heroPhone.png) !important;
-    content: url("/img/heroPhone.png");
+    content: url("/img/heroPhone.png") ;
 
   }
 
@@ -183,6 +182,7 @@ body {
   .centerText {
     margin-top: 85%;
     margin-left: 35%;
+    width: 40%;
   
 
   .imageforbutton {
