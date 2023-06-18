@@ -161,6 +161,7 @@ body {
 
   .navBarContainer {
     display: none;
+
   }
 
   .footerOptionsIcon {
@@ -171,7 +172,14 @@ body {
   .NavbarOptionsIcon {
     display: none;
   }
-
+  #iconNav{
+    display: none;
+  }
+  .iconNav {
+    margin-top: 8% !important;
+    width: 200px;
+    height: 200px;
+  }
   .hamburgerButton {
     display: block;
     height: 200px;
