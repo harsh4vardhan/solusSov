@@ -319,10 +319,10 @@ function showAnimation() {
 
 $(window).bind('mousewheel DOMMouseScroll', function (event) {
     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-        $('.navBarContainer').css('display', 'block');
+        $('.navBarContainer').css('display', 'grid');
     }
     else {
-        $('.navBarContainer').css('display', 'block');
+        $('.navBarContainer').css('display', 'grid');
 
     }
 });

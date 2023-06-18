@@ -340,10 +340,13 @@ body {
 .navOptions {
   position: absolute;
   display: flex;
-  margin-left: 32%;
   justify-items: center;
   z-index: 1;
   font-size: x-large;
+  justify-self: center;
+  justify-content: space-evenly;
+  width: 40%;
+
 }
 
 .socialMedia {
@@ -356,6 +359,15 @@ body {
 
 .footerOptionsIcon {
   margin-left: 20%;
+}
+
+.NavbarOptionsIcon {
+  z-index: 1;
+
+  color: white;
+  font-family: myFirstFont;
+  font-weight: 1;
+
 }
 
 .leftText {
@@ -705,6 +717,7 @@ textarea {
   z-index: 2;
   background: '';
   width: 100%;
+  display: grid;
 }
 
 .footerOptionsIcon {
@@ -723,6 +736,10 @@ textarea {
 }
 
 .footerOptionsIcon:hover {
+  text-shadow: 0 0 20px #fff, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+}
+
+.NavbarOptionsIcon:hover {
   text-shadow: 0 0 20px #fff, 0 0 30px black, 0 0 40px black, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
 }
 
