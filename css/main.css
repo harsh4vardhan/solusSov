@@ -180,6 +180,10 @@ body {
     content: url("/img/RJ2.png") ;
     width: 20rem;
   }
+  .upcomingPhone {
+    content: url("/img/upcomingPhone.png") ;
+    
+  }
   .hamburgerButton {
     display: block;
     height: 100px;
