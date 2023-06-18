@@ -20,6 +20,7 @@ function about() {
     for (var i = 0; i < elmsMerch.length; i++) {
         elmsMerch[i].style.display = 'none';
     }
+    this.openHamburgerBar();
 }
 
 function home() {
@@ -48,6 +49,8 @@ function home() {
     for (var i = 0; i < elmsMerch.length; i++) {
         elmsMerch[i].style.display = 'none';
     }
+    this.openHamburgerBar();
+
 }
 
 function archive() {
@@ -76,6 +79,8 @@ function archive() {
     for (var i = 0; i < elmsMerch.length; i++) {
         elmsMerch[i].style.display = 'none';
     }
+    this.openHamburgerBar();
+
 }
 
 function events() {
@@ -104,6 +109,8 @@ function events() {
     for (var i = 0; i < elmsMerch.length; i++) {
         elmsMerch[i].style.display = 'none';
     }
+    this.openHamburgerBar();
+
 }
 
 function merch() {
@@ -132,6 +139,8 @@ function merch() {
     for (var i = 0; i < elmsMerch.length; i++) {
         elmsMerch[i].style.display = 'block';
     }
+    this.openHamburgerBar();
+
 }
 
 function buyTickets() {
