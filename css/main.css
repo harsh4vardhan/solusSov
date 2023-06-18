@@ -154,6 +154,11 @@ body {
     width: 100% !important;
   }
 
+  #heroImage{
+    content: url("/img/heroPhone.png");
+
+  }
+
   .navBarContainer {
     display: none;
   }
@@ -172,6 +177,9 @@ body {
     height: 100px;
     width: 100px;
 
+  }
+  .centerText {
+    margin-top: 85%;
   }
 
   .imageforbutton {
@@ -227,6 +235,7 @@ body {
   .footerOptionsIcon {
     margin-left: 10% !important;
   }
+
 
 
 
