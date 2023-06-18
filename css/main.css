@@ -173,12 +173,12 @@ body {
   }
   #card1{
     content: url("/img/RJ.png") ;
-    width: 42rem;
+    width: 20rem;
   }
 
   #card2{
     content: url("/img/RJ2.png") ;
-    width: 42rem;
+    width: 20rem;
   }
   .hamburgerButton {
     display: block;
