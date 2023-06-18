@@ -162,6 +162,9 @@ body {
     zoom: 0.2;
     display: none;
   }
+  .NavbarOptionsIcon {
+    display: none;
+  }
 
   .hamburgerButton {
     display: block;
