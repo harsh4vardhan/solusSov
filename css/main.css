@@ -154,58 +154,25 @@ body {
     width: 100% !important;
   }
 
-  #heroImage{
-    content: url("/img/heroPhone.png") ;
-
-  }
-
   .navBarContainer {
     display: none;
   }
 
   .footerOptionsIcon {
     zoom: 0.2;
-    display:5none;
+    display: none;
   }
 
   .NavbarOptionsIcon {
     display: none;
   }
-  #card1{
-    content: url("/img/RJ.png") ;
-    width: 20rem;
-  }
 
-  #card2{
-    content: url("/img/RJ2.png") ;
-    width: 20rem;
-  }
-  .upcomingPhone {
-    content: url("/img/upcomingPhone.png") ;
-    
-  }
-
-  .merchPhone {
-    content: url("/img/merch.png") ;
-
-  }
-
-  .excitedPhone{
-    content: url("/img/excitedPhone.png") ;
-
-  }
   .hamburgerButton {
     display: block;
     height: 100px;
     width: 100px;
 
   }
-
-  .centerText {
-    margin-top: 85%;
-    margin-left: 35%;
-    width: 40%;
-  
 
   .imageforbutton {
     height: 70%;
@@ -260,7 +227,6 @@ body {
   .footerOptionsIcon {
     margin-left: 10% !important;
   }
-
 
 
 
