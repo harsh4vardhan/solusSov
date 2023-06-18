@@ -200,6 +200,16 @@ body {
 
     content: url("/img/upcomingPhone.png");
   }
+
+  .merchPhone {
+    content: url("/img/merch.png");
+
+  }
+
+  .excitedPhone {
+    content: url("/img/excitedPhone.png");
+
+  }
   .imageforbutton {
     height: 70%;
     width: 70%;
