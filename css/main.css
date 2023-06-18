@@ -171,7 +171,15 @@ body {
   .NavbarOptionsIcon {
     display: none;
   }
+  #card1{
+    content: url("/img/RJ.png") ;
+    width: 42rem;
+  }
 
+  #card2{
+    content: url("/img/RJ2.png") ;
+    width: 42rem;
+  }
   .hamburgerButton {
     display: block;
     height: 100px;
