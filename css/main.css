@@ -805,10 +805,12 @@ textarea {
 
 .textInput {
   background: transparent;
-  background-image: url(/img/Input.png);
+  /* background-image: url(/img/Input.png); */
+  background-color: white;
   width: 70vw;
   height: 55px;
   border: none;
+  border-radius: 12px;
 }
 
 .formRegister {
