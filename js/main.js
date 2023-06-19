@@ -140,7 +140,7 @@ function merch() {
         elmsMerch[i].style.display = 'block';
     }
     this.openHamburgerBar();
-
+    
 }
 
 function buyTickets() {
