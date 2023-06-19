@@ -253,14 +253,14 @@ function showRegister(eventNo) {
 
 }
 
-function openHamburgerBar() {
-    if (document.getElementById('HambugerBarOptions').style.display == 'none') {
-        console.log('here');
-        document.getElementById('HambugerBarOptions').style.display = 'block';
-    } else {
-        document.getElementById('HambugerBarOptions').style.display = 'none';
-    }
-}
+// function openHamburgerBar() {
+//     if (document.getElementById('HambugerBarOptions').style.display == 'none') {
+//         console.log('here');
+//         document.getElementById('HambugerBarOptions').style.display = 'block';
+//     } else {
+//         document.getElementById('HambugerBarOptions').style.display = 'none';
+//     }
+// }
 
 
 function createForm(eventNo) {
