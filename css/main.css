@@ -286,12 +286,25 @@ body {
   bottom: -34rem;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  background: blur(10px);
+  /* opacity: 0; */
   margin: auto;
   backdrop-filter: blur(20px);
   width: 100%;
 }
+
+#eventConfrim {
+  position: sticky;
+  display: none;
+  bottom: -34rem;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0; */
+  margin: auto;
+  backdrop-filter: blur(20px);
+  width: 100%;
+  z-index: 3;
+}
+
 
 #submitButton {
   float: right;

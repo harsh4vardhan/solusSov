@@ -280,7 +280,7 @@ function createForm(eventNo) {
     html += '<input type="radio" id="sex" name="sex" value="others">'
     html += '<label for="others" class="labelForPhone">OTHERS</label><br><br></div>'
     html += '<label for="ticketoption" class="labelForPhone" >TICKET OPTIONS</label><br><select class="labelForSize" id="ticketoption" name="ticketoption"><option value="opt">PASS OPTIONS</option><option value="SOLO">SOLO PASS 750/-</option><option value="group">GROUP PASS /-(min, 3pax)</option><option value="vip">VIP PASS 1500/-(perks + merch)</option></select>'
-    html += '<div class="options_button"><img src="img/Buttons (1).png" onclick="showRegister(' + eventNo + ')"><button class="next" type="submit" onclick="showAnimation()">NEXT</button></div>'
+    html += '<div class="options_button"><img src="img/Buttons (1).png" onclick="showRegister(' + eventNo + ')"><button class="next" type="submit" onclick="showAnimationEvent()">NEXT</button></div>'
     html += '</form>'
     console.log("reached here in create");
     return html;
@@ -318,6 +318,18 @@ function showAnimation() {
     setTimeout(function () {
         this.home();
         document.getElementById('waitlistConfirm').style.display = 'none';
+    }, delayInMilliseconds);
+}
+
+function showAnimationEvent() {
+    document.getElementById('eventConfrim').style.display = 'grid';
+    $(document.getElementById('eventConfrim')).animate({ 'opacity': '1' }, 'smooth')
+    $(document.getElementById('eventConfrim')).animate({ '  backdrop-filter ': ': blur(10px)' }, 'slow')
+    document.getElementById('navbar').style.display = 'none';
+    delayInMilliseconds = 2000;
+    setTimeout(function () {
+        this.home();
+        document.getElementById('eventConfrim').style.display = 'none';
     }, delayInMilliseconds);
 }
 
