@@ -541,7 +541,23 @@ body {
   text-align: center;
   vertical-align: middle;
   line-height: 45px;
+  z-index: 3;
+}
 
+.mrpMerch {
+  color: white;
+  font-family: 'myFirstFont';
+  font-weight: 100;
+  font-size: 87px;
+  margin: 0;
+}
+.sizingChart {
+  width: 25rem;
+  filter: blur(3px);
+  height: 14rem;
+}
+.sizingChart:hover {
+  filter: blur(0px);
 }
 
 .mainContainerHome {
