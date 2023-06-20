@@ -148,6 +148,7 @@ body {
 
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+
   /* html {
     zoom: .2;
     max-zoom: .2;
@@ -255,9 +256,11 @@ body {
     height: 100%;
     overflow: hidden;
   }
+
   .backgroundPhone {
     filter: blur(20PX);
   }
+
   .assetPhone {
     width: 35vw;
     position: absolute;
@@ -267,6 +270,8 @@ body {
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
+    left: 50%;
+    transform: translate(-50%, -8px);
   }
 
   .textPhone {
@@ -278,6 +283,8 @@ body {
     justify-self: center;
     margin-top: 120%;
     font-style: bold;
+    left: 50%;
+    transform: translate(-50%, -8px);
     /* margin:0; */
   }
 
@@ -287,10 +294,11 @@ body {
     font-family: Syne;
     font-weight: 0;
     font-size: 16px;
-    justify-self: center;
     margin-top: 160%;
     font-style: bold underline;
     text-decoration: underline;
+    left: 50%;
+    transform: translate(-50%, -8px);
 
   }
 
@@ -298,6 +306,7 @@ body {
     from {
       box-shadow: 0 0 0px #000, 0 0 0px #000, 0 0 0px white, 0 0 0px #000, 0 0 0px #000, 0 0 0px #000, 0 0 0px #000;
     }
+
     to {
       box-shadow: 0 0 4px #999, 0 0 4px #999, 0 0 4px #999, 0 0 4px #999, 0 0 4px #999, 0 0 4px #999, 0 0 4px #999;
     }
@@ -313,7 +322,8 @@ body {
   }
 
 }
-.ressponsiveImage{
+
+.ressponsiveImage {
   width: 45rem;
 }
 
@@ -360,6 +370,7 @@ body {
   backdrop-filter: blur(20px);
   width: 100%;
 }
+
 #textMain {
   color: white;
   font-family: 'myFirstFont';
@@ -476,8 +487,8 @@ body {
 }
 
 .textMerchTop {
- width: 30%;
- margin-bottom: 15%;
+  width: 30%;
+  margin-bottom: 15%;
 }
 
 .icon {
@@ -655,11 +666,13 @@ body {
   font-size: 87px;
   margin: 0;
 }
+
 .sizingChart {
   width: 25rem;
   filter: blur(3px);
   height: 14rem;
 }
+
 .sizingChart:hover {
   filter: blur(0px);
 }
