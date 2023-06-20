@@ -283,8 +283,8 @@ body {
     justify-self: center;
     margin-top: 120%;
     font-style: bold;
-    left: 50%;
-    transform: translate(-50%, -8px);
+    left: 22%;
+    transform: translate(-15%, -8px);
     /* margin:0; */
   }
 
@@ -297,8 +297,7 @@ body {
     margin-top: 160%;
     font-style: bold underline;
     text-decoration: underline;
-    left: 50%;
-    transform: translate(-50%, -8px);
+    left: 20%;
 
   }
 
