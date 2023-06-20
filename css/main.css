@@ -283,9 +283,7 @@ body {
     justify-self: center;
     margin-top: 120%;
     font-style: bold;
-    margin-left: auto;
-margin-right: auto;
-
+    left: 7%;
     /* margin:0; */
   }
 
@@ -298,9 +296,8 @@ margin-right: auto;
     margin-top: 160%;
     font-style: bold underline;
     text-decoration: underline;
-margin-left: auto;
-margin-right: auto;
-justify-self: center;
+    left: 20%;
+
   }
 
   @-webkit-keyframes glow {
