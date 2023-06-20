@@ -25,7 +25,6 @@
 </head>
 
 <body>
-
   <!-- Add your site or application content here -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
@@ -35,7 +34,15 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <!-- <div class="mainContainerHome">
+  <div class="phoneBanner">
+    <img class="assetPhone" src="img/Asset 35@3x 3.png">
+    <img class="backgroundPhone" src="img/heroPhone.png">
+    <h1 class="textPhone">LIFT SOMETHING HEAVIER
+      THAN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      YOUR PHONE  </h1>
+      <h1  class="textPhoneAccess">(LAPTOP ACCESS ONLY)</h1>
+  </div>
+  <div class="mainContainerHome">
     <div class="HambugerBarOptions" id="HambugerBarOptions">
       <h1 class="phoneOptions" onclick="home()">HOME</h1>
       <h1 class="phoneOptions" onclick="about()">ABOUT</h1>
@@ -45,11 +52,9 @@
       <button class="buyButtonPhone">
         JOIN COMMUNITY
       </button>
-    </div> -->
-    <div class="iconNav" >
-      <!-- <img src="img/Mask group (3).png"> -->
     </div>
-    <button class="hamburgerButton" onclick="openHamburgerBar()"><img src="img/Group 148.png" alt="" class="imageforbutton" style="backdrop-filter: blur(20px);"></button>
+    <button class="hamburgerButton" onclick="openHamburgerBar()"><img src="img/Group 148.png" alt=""
+        class="imageforbutton" style="backdrop-filter: blur(20px);"></button>
     <div class="navBarContainer" id="navbar">
       <div class="iconNav" id="iconNav">
         <img src="img/assetSolus.png">
@@ -60,7 +65,7 @@
         <h1 class="NavbarOptionsIcon" onclick="archive()">ARCHIVE</h1>
         <h1 class="NavbarOptionsIcon" onclick="events()">EVENTS</h1>
         <h1 class="NavbarOptionsIcon" onclick="merch()">MERCH</h1>
-       
+
         <!-- <img onclick="home()" src="img/HOME.png" class="footerOptionsIcon">
         <img onclick="archive()" src="img/ARCHIVE.png" class="footerOptionsIcon">
         <img onclick="about()" src="img/ABOUT (1).png " class="footerOptionsIcon">
@@ -88,8 +93,8 @@
             <h2 class="selectTshirt" onclick="onClickTshirtSize('S')" id="S">S</h2>
             <h2 class="selectTshirt" onclick="onClickTshirtSize('M')" id="M">M</h2>
             <h2 class="selectTshirt" onclick="onClickTshirtSize('L')" id="L">L</h2>
-            <h2 class="selectTshirt" onclick="onClickTshirtSize('X')" id="X">X</h2>
-            <h2 class="selectTshirt" onclick="onClickTshirtSize('XL')" id="XL">XL</h2>
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('X')" id="X">XL</h2>
+            <h2 class="selectTshirt" onclick="onClickTshirtSize('XL')" id="XL">XXL</h2>
           </div>
           <img src="img/Rectangle 206.png" style="width:25rem"><br><br><br>
           <img src="img/Group 10 (2).png" onclick="showWaitList()"><br><br><br><br>
@@ -105,13 +110,13 @@
           <input type="text" id="name" name="name" value="" class="textInput"><br><br>
           <label for="fname" class="labelForPhone">YOUR EMAIL</label><br>
           <input type="text" id="email" name="email" value="" class="textInput"><br><br>
-          <label for="fname"class="labelForPhone">SOCIAL MEDIAL HANDLE</label><br>
+          <label for="fname" class="labelForPhone">SOCIAL MEDIAL HANDLE</label><br>
           <input type="text" id="smhandle" name="smhandle" value="" class="textInput"><br><br>
-          <label for="fname"class="labelForPhone">PHONE NUMBER</label><br>
+          <label for="fname" class="labelForPhone">PHONE NUMBER</label><br>
           <input type="text" id="phno" name="phno" value="" class="textInput"><br><br>
           <label for="fname" class="labelForPhone">AGE</label><br>
           <input type="text" id="age" name="age" value="" class="textInput"><br><br>
-          <label for="fname"  class="labelForPhone">HOME ADDRESSS</label><br>
+          <label for="fname" class="labelForPhone">HOME ADDRESSS</label><br>
           <input type="text" id="homeaddress" name="homeaddress" value="" class="textInput"><br><br>
           <input type="radio" id="size" name="size" value="small">
           <label for="html" class="labelForPhone">SMALL</label><br><br>
@@ -225,9 +230,9 @@
     </div>
     <div class="hero" id="home">
       <div class="centerText">
-        <img src="img/DLP 8.png" class="textHero">
+        <h1 id="textMain">DLP 2</h1>
         <img src="img/BOMBAY.png" class="place">
-        <img src="img/5.06.2023 (1).png" class="textHero">
+        <h1 id="dateText">25/6/2023</h1>
         <!-- <img src="img/Group 5.png" class="textHero" onclick="buyTickets()"> -->
       </div>
       <img src="img/hero1.png" id="heroImage" class="blur">
@@ -247,11 +252,10 @@
     </div>
     <div class="merch" id="home" id="widthHundred">
       <div class="leftText">
-        <img src="img/MERC  H.png" class="textMerch">
-        <img src="img/DLP 8 EDITION.png" class="textMerch">
-        <img src="img/Allows special access to all Solus Sovereign events for 2023.png" class="textMerch">
-        <img src="img/Group 44.
-        png" class="textMerch">
+        <img src="img/MERCH.png" class="textMerchTop">
+        <img src="img/V3 COLLECTION.png" class="textMerch">
+        <img src="img/Official merchandise of SOLUS MEMBERS CLUB.png" class="textMerch">
+        <img src="img/Group 44.png" class="textMerch">
       </div>
       <img src="img/STYLE.png" id="widthHundred" onclick="merch()" class="merchPhone">
     </div>
