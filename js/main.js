@@ -342,7 +342,15 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
 
     }
 });
-
+function emailSignup() {
+    $.ajax({
+        type: "POST",
+        url: 'http://16.171.12.189/api/email',
+        data: document.getElementById('emailSignup').nodeValue, // serializes the form's elements.
+        success: function (data) {
+        }
+    });
+}
 
 $(document).ready(function () {
     $("#waitlist").submit(function (e) {
