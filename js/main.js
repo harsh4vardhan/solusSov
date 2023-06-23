@@ -259,7 +259,8 @@ function showRegister(eventNo) {
 
 
 function createForm(eventNo) {
-
+    console.log(eventNo);
+    
     html = '<form action="http://16.171.12.189/api/events" class="formRegister" id="register" method="post" target="_blank">';
     html += '<label for="fname"  style="padding-top:5%" class="labelForPhone">YOUR NAME</label><br><br>'
     html += '<input type="text" id="name" name="name" value="" class="textInput"><br>'
@@ -273,6 +274,11 @@ function createForm(eventNo) {
     html += '<input type="text" id="age" name="age" value="" class="textInput"><br><br>'
     html += '<label for="fname"  class="labelForPhone">HOME ADDRESS</label><br>'
     html += '<input type="text" id="homeaddress" name="homeaddress" value="" class="textInput"><br><br>'
+    if(eventNo == 'eventOne') {
+        html += '<input type="hidden" id="eventvenue" name="eventvenue" value="mumbai" class="textInput"><br><br>'
+    } else {
+        html += '<input type="hidden" id="eventvenue" name="eventvenue" value="bangalore" class="textInput"><br><br>'
+    }
     html += '<div class="labelForSize"><input type="radio" id="sex" name="sex" value="male">'
     html += '<label for="male" class="labelForPhone">MALE</label><br><br>'
     html += '<input type="radio" id="sex" name="sex" value="female">'
